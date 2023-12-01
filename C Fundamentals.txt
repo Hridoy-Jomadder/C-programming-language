@@ -1,0 +1,96 @@
+1. Variables and Data Types:
+In C, you declare variables to store data. Data types specify the type of data a variable can hold. Common data types include int (integer), float (floating-point number), double (double-precision floating-point number), and char (character).
+
+#include <stdio.h>
+
+int main() {
+    int integerVar = 42;
+    float floatVar = 3.14;
+    double doubleVar = 2.71828;
+    char charVar = 'A';
+
+    printf("Integer: %d\n", integerVar);
+    printf("Float: %f\n", floatVar);
+    printf("Double: %lf\n", doubleVar);
+    printf("Character: %c\n", charVar);
+
+    return 0;
+}
+2. Operators:
+C supports various operators for performing operations on variables and values. Common operators include arithmetic operators (+, -, *, /), relational operators (==, !=, <, >), and logical operators (&&, ||, !).
+
+#include <stdio.h>
+
+int main() {
+    int a = 5, b = 2;
+    
+    printf("Sum: %d\n", a + b);
+    printf("Difference: %d\n", a - b);
+    printf("Product: %d\n", a * b);
+    printf("Quotient: %d\n", a / b);
+    
+    printf("Is a equal to b? %d\n", a == b);
+    printf("Is a not equal to b? %d\n", a != b);
+    
+    return 0;
+}
+3. Control Flow:
+C provides control flow statements like if, else, switch, while, do-while, and for to control the flow of execution in a program.
+
+#include <stdio.h>
+
+int main() {
+    int num = 10;
+
+    if (num > 0) {
+        printf("Positive number\n");
+    } else if (num < 0) {
+        printf("Negative number\n");
+    } else {
+        printf("Zero\n");
+    }
+
+    // Loop example
+    int i;
+    for (i = 1; i <= 5; i++) {
+        printf("%d ", i);
+    }
+    printf("\n");
+
+    return 0;
+}
+4. Functions:
+Functions are blocks of code that perform a specific task. They promote code reusability and modularization.
+
+#include <stdio.h>
+
+// Function declaration
+int add(int a, int b);
+
+int main() {
+    int result = add(3, 4);
+    printf("Sum: %d\n", result);
+
+    return 0;
+}
+
+// Function definition
+int add(int a, int b) {
+    return a + b;
+}
+5. Arrays:
+Arrays are used to store multiple values of the same data type in contiguous memory locations.
+
+#include <stdio.h>
+
+int main() {
+    int numbers[5] = {1, 2, 3, 4, 5};
+
+    for (int i = 0; i < 5; i++) {
+        printf("%d ", numbers[i]);
+    }
+    printf("\n");
+
+    return 0;
+}
+These are just some foundational concepts in C programming. As you progress, you'll encounter more advanced topics like pointers, structures, and dynamic memory allocation. Practice and experimentation are key to mastering the language.
