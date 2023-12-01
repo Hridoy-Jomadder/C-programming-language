@@ -1,0 +1,81 @@
+Operators in C are symbols that represent computations or actions to be performed on variables or values. Expressions are combinations of operators and operands that produce a result. Here, we'll explore some common operators in C and how they are used in expressions:
+
+1. Arithmetic Operators:
+Arithmetic operators perform basic mathematical operations.
+
+#include <stdio.h>
+
+int main() {
+    int a = 5, b = 2;
+
+    printf("Sum: %d\n", a + b);
+    printf("Difference: %d\n", a - b);
+    printf("Product: %d\n", a * b);
+    printf("Quotient: %d\n", a / b);
+    printf("Modulus: %d\n", a % b);
+
+    return 0;
+}
+2. Relational Operators:
+Relational operators compare values and return a boolean result (1 for true, 0 for false).
+
+#include <stdio.h>
+
+int main() {
+    int a = 5, b = 2;
+
+    printf("Is a equal to b? %d\n", a == b);
+    printf("Is a not equal to b? %d\n", a != b);
+    printf("Is a greater than b? %d\n", a > b);
+    printf("Is a less than or equal to b? %d\n", a <= b);
+
+    return 0;
+}
+3. Logical Operators:
+Logical operators perform logical operations on boolean values.
+
+#include <stdio.h>
+
+int main() {
+    int x = 1, y = 0;
+
+    printf("Logical AND: %d\n", x && y);
+    printf("Logical OR: %d\n", x || y);
+    printf("Logical NOT: %d\n", !x);
+
+    return 0;
+}
+4. Assignment Operators:
+Assignment operators assign values to variables.
+
+#include <stdio.h>
+
+int main() {
+    int a = 5, b = 2;
+
+    b += a; // Equivalent to b = b + a
+    printf("New value of b: %d\n", b);
+
+    return 0;
+}
+5. Increment and Decrement Operators:
+Increment (++) and decrement (--) operators are used to increase or decrease the value of a variable by 1.
+
+#include <stdio.h>
+
+int main() {
+    int num = 5;
+
+    num++; // Increment
+    printf("Incremented value: %d\n", num);
+
+    num--; // Decrement
+    printf("Decremented value: %d\n", num);
+
+    return 0;
+}
+These are just a few examples of the many operators available in C. Understanding how to use operators and construct expressions is essential for writing effective and efficient C programs.
+
+
+
+
