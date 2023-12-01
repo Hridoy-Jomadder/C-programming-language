@@ -1,0 +1,45 @@
+Now, let's look at a few simple C programs to get started:
+
+1. Hello, World!
+
+#include <stdio.h>
+
+int main() {
+    printf("Hello, World!\n");
+    return 0;
+}
+This program prints "Hello, World!" to the console.
+
+2. Sum of Two Numbers:
+
+#include <stdio.h>
+
+int main() {
+    int num1 = 5, num2 = 7, sum;
+    sum = num1 + num2;
+    
+    printf("Sum of %d and %d is: %d\n", num1, num2, sum);
+    
+    return 0;
+}
+This program calculates and prints the sum of two numbers.
+
+3. Factorial Calculation:
+
+#include <stdio.h>
+
+int factorial(int n) {
+    if (n == 0 || n == 1) {
+        return 1;
+    } else {
+        return n * factorial(n - 1);
+    }
+}
+
+int main() {
+    int num = 5;
+    printf("Factorial of %d is: %d\n", num, factorial(num));
+    
+    return 0;
+}
+This program calculates and prints the factorial of a number using recursion.
