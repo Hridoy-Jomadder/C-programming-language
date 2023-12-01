@@ -1,5 +1,4 @@
 Now, let's look at a few simple C programs to get started:
-
 1. Hello, World!
 
 #include <stdio.h>
